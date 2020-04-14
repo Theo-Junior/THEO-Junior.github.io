@@ -34,8 +34,10 @@ description:           >
 
 # A shorter description for the sidebar.
 tagline:               >
-  A Jekyll theme with JavaScript powers.
-  Open `_config.yml` to edit this text.
+  [자바 빅데이터 플랫폼 구축 전문가 양성과정]
+  을 수강하며 기록하는 강의록 노트입니다.
+  [Git Store ::]
+  https://github.com/Theo-Junior/Bigdataplatform_Class_Note
 
 # A list of keywords for your blog
 keywords:              []
