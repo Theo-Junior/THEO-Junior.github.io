@@ -27,15 +27,13 @@ title:                 THEO-Junior's Class Notes
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  [자바 빅데이터 플랫폼 구축 전문가 양성과정]
-  을 수강하며 기록하는 강의록 노트입니다.
-  [Git Store ::]
-  https://github.com/Theo-Junior/Bigdataplatform_Class_Note
+  [THEO-Junior's Class Notes]
+  
 
 # A shorter description for the sidebar.
 tagline:               >
   [자바 빅데이터 플랫폼 구축 전문가 양성과정]
-  을 수강하며 기록하는 강의록 노트입니다.
+  을 수강하며 기록하는 강의록 노트입니다.\n
   [Git Store ::]
   https://github.com/Theo-Junior/Bigdataplatform_Class_Note
 
