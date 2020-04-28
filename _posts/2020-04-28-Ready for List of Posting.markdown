@@ -1,0 +1,20 @@
+---
+layout: post
+title: The Best Organizer Software
+date: 2020-04-28 00:00:00 +0300
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: software.jpg # Add image post (optional)
+tags: [Productivity, Software] # add tag
+---
+
+## 작성해야 할 포스팅 메모..
+
+1. Java Class 중 class & interface
+2. Java Class 중 Generic과 Lambda
+3. Web Class 중 HTML과 CSS, JS
+4. Docker 설치 후 컨테이너에 OracleDB 설치 과정
+5. ERP 설치 및 진행
+6. 프로그래머스 문제 풀이 작성
+7. 쉘 스크립트 공부하는 과정..
+8. 그 외 마크다운 사용법 및 적용 공부..
+9. Github.io 블로그 개설 및 사용 방법
