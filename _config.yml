@@ -12,10 +12,10 @@ site-twitter: #if your site has a twitter account, enter it here
 author: Theo Kim # add your name
 author-img: Mypic.jpeg # add your photo
 about-author: 자바기반 빅데이터 플랫폼 개발자 양성과정 교육에서 듣는 강의에 대한 개인 노트 및 다이어리입니다. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
+#social-twitter: # add your Twitter handle
+#social-facebook: # add your Facebook handle
 social-github: https://github.com/Theo-Junior # add your Github handle
-social-linkedin: # add your Linkedin handle
+social-linkedin: https://www.linkedin.com/in/kim-seongmin-96ba56174/ # add your Linkedin handle
 social-email: miln0423kr@gmail.com # add your Email address
 
 # Disqus
