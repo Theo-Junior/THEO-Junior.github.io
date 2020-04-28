@@ -9,14 +9,14 @@ url: "https://theo-junior.github.io/" # the base hostname & protocol for your si
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: David Freeman # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+author: Theo Kim # add your name
+author-img: Mypic.jpg # add your photo
+about-author: 자바 빅데이터플랫폼 개발자 양성과정에서 듣는 강의에 대한 개인 노트 및 다이어리입니다. # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
+social-github: https://github.com/Theo-Junior # add your Github handle
 social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+social-email: miln0423kr@gmail.com # add your Email address
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
