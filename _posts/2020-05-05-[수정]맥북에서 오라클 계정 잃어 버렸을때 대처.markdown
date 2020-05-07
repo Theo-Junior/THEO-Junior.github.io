@@ -10,80 +10,78 @@ tags: [Productivity, Software] # add tag
 # 마크다운(Github.io에 작성하는 포스트 위주로..) 작성 방법 정리
 
 
-## I. 제목(Header)
-
-
 <h5>이 게시물은 스크랩입니다.
 <h5>https://yruby.tistory.com/38 의 글을 참고했고 공부 용으로 스크랩 해두었습니다.</h5>
 <hr>
 
-오라클 강의를 듣는 중.. <br>
-실습용으로 제공되어있는 윈도우 PC를 쓰지 않고 내 맥북 환경에서 구동해보겠다고 쇼하던 중..<br>
-System 계정을 잊어버렸고 접속이 안된다..<br>
-왠만한 포스팅은 모두 윈도우 기반으로 설명을 해주었는데 정말 한줄기 빛내림과 같은 포스팅을 발견!<br>
-앞으로 또 이렇게 까먹을까봐 미리 스크랩을 해두는 바이다.<br>
-<br>
+오라클 강의를 듣는 중..  
+실습용으로 제공되어있는 윈도우 PC를 쓰지 않고 내 맥북 환경에서 구동해보겠다고 쇼하던 중..  
+System 계정을 잊어버렸고 접속이 안된다..  
+왠만한 포스팅은 모두 윈도우 기반으로 설명을 해주었는데 정말 한줄기 빛내림과 같은 포스팅을 발견!  
+앞으로 또 이렇게 까먹을까봐 미리 스크랩을 해두는 바이다.  
+
 <hr>
-mac에서 거의 6개월 만에 sqldeveloper 접속<br>
-<br>
-▽<br>
-<br>
-비번 잊어버려서 여러번 시도<br>
-<br>
-▽<br>
-<br>
-the account is locked<br>
-<br>
-▽<br>
-<br>
-lock 풀기위해 sysdba로 접속 시도<br>
-<br>
-▽<br>
-<br>
-insufficient privileges 에러 (권한 불충분)<br>
-<br>
-▽<br>
-<br>
-권한 주기 위해 grant sysdba to sys; 실행<br>
-<br>
-▽<br>
-<br>
-not connected(lock 걸려서 접속이 안되므로)<br>
-<br><br><br>
 
+mac에서 거의 6개월 만에 sqldeveloper 접속  
 
-이런 무한 루프에 빠져버림...<br>
-![ex_scs_1](../assets/img/Post_200507/Post_200507_1.png)<br>
-![ex_scs_2](../assets/img/Post_200507/Post_200507_2.png)<br>
+▽  
 
-결국 이 무한 루프를 끝내기 위해서는 sysdba에 접속을 해야 뭔갈 할 수 있음<br>
+비번 잊어버려서 여러번 시도  
 
-그렇다면 mac에서 docker로 oracle11g 실행 후 sqlplus sysdba에 접속하려면?<br>
+▽  
 
-1. docker exec -it 컨테이너ID bin/bash<br>
-![ex_scs_3](../assets/img/Post_200507/Post_200507_3.png)<br>
+the account is locked  
 
-2. root@컨테이너ID: /# sqlplus /nolog<br>
-![ex_scs_4](../assets/img/Post_200507/Post_200507_4.png)<br>
-3. conn sys/비밀번호 as sysdba<br>
-![ex_scs_5](../assets/img/Post_200507/Post_200507_5.png)<br>
+▽  
 
-연결됨...!!!!!<br>
+lock 풀기위해 sysdba로 접속 시도  
+
+▽  
+
+insufficient privileges 에러 (권한 불충분)  
+
+▽  
+
+권한 주기 위해 grant sysdba to sys; 실행  
+
+▽  
+
+not connected(lock 걸려서 접속이 안되므로)  
 
 
 
-그 후 lock을 풀기 위해 select username, account_status, lock_date from dba_users;<br>
+이런 무한 루프에 빠져버림...  
+![ex_scs_1](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_1.png)  
+![ex_scs_2](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_2.png)  
 
-입력하여 어떤 계정이 lock 걸려 있는지 확인 후<br>
-![ex_scs_6](../assets/img/Post_200507/Post_200507_6.png)<br>
+결국 이 무한 루프를 끝내기 위해서는 sysdba에 접속을 해야 뭔갈 할 수 있음  
 
-alter user 계정이름 account unlock; 으로 lock 풀어준다<br>
-![ex_scs_7](../assets/img/Post_200507/Post_200507_7.png)<br>
+그렇다면 mac에서 docker로 oracle11g 실행 후 sqlplus sysdba에 접속하려면?  
 
-※ 참고: account_status 상태<br>
+1. docker exec -it 컨테이너ID bin/bash  
+![ex_scs_3](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_3.png)  
 
- - OPEN : 정상<br>
- - LOCKED(TIMED) : 일정 횟수 이상 잘못 입력함<br>
- - EXPIRED & LOCKED : 패스워드 기간만료<br>
+2. root@컨테이너ID: /# sqlplus /nolog  
+![ex_scs_4](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_4.png)  
+3. conn sys/비밀번호 as sysdba  
+![ex_scs_5](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_5.png)  
+
+연결됨...!!!!!  
+
+
+
+그 후 lock을 풀기 위해 select username, account_status, lock_date from dba_users;  
+
+입력하여 어떤 계정이 lock 걸려 있는지 확인 후  
+![ex_scs_6](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_6.png)  
+
+alter user 계정이름 account unlock; 으로 lock 풀어준다  
+![ex_scs_7](https://github.com/Theo-Junior/Theo-Junior.github.io/tree/master/assets/img/Post_200507/Post_200507_7.png)  
+
+※ 참고: account_status 상태  
+
+ - OPEN : 정상  
+ - LOCKED(TIMED) : 일정 횟수 이상 잘못 입력함  
+ - EXPIRED & LOCKED : 패스워드 기간만료  
 
  <hr>
