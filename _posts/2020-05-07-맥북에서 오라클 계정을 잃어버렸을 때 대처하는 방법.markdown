@@ -1,0 +1,85 @@
+---
+layout: post
+title: [스크랩] 맥북에서 docker oracle11g 실행 후 sqlplus sysdba로 접속하는 방법..!
+date: 2020-05-07 10:29:30
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: "" # Add image post (optional)
+tags: [Programming, Learn] # add tag
+---
+
+####이 게시물은 스크랩입니다.
+####https://yruby.tistory.com/38 의 글을 참고했고 공부 용으로 스크랩 해두었습니다.
+<hr>
+
+오라클 강의를 듣는 중..
+실습용으로 제공되어있는 윈도우 PC를 쓰지 않고 내 맥북 환경에서 구동해보겠다고 쇼하던 중..
+System 계정을 잊어버렸고 접속이 안된다..
+왠만한 포스팅은 모두 윈도우 기반으로 설명을 해주었는데 정말 한줄기 빛내림과 같은 포스팅을 발견!
+앞으로 또 이렇게 까먹을까봐 미리 스크랩을 해두는 바이다.
+
+<hr>
+mac에서 거의 6개월 만에 sqldeveloper 접속
+
+▽
+
+비번 잊어버려서 여러번 시도
+
+▽
+
+the account is locked
+
+▽
+
+lock 풀기위해 sysdba로 접속 시도
+
+▽
+
+insufficient privileges 에러 (권한 불충분)
+
+▽
+
+권한 주기 위해 grant sysdba to sys; 실행
+
+▽
+
+not connected(lock 걸려서 접속이 안되므로)
+
+
+
+이런 무한 루프에 빠져버림...
+![ex_scs_1](../assets/img/Post_200507/Post_200507_1.png)
+![ex_scs_2](../assets/img/Post_200507/Post_200507_2.png)
+
+
+결국 이 무한 루프를 끝내기 위해서는 sysdba에 접속을 해야 뭔갈 할 수 있음
+
+그렇다면 mac에서 docker로 oracle11g 실행 후 sqlplus sysdba에 접속하려면?
+
+1. docker exec -it 컨테이너ID bin/bash
+![ex_scs_3](../assets/img/Post_200507/Post_200507_3.png)
+
+2. root@컨테이너ID: /# sqlplus /nolog
+![ex_scs_4](../assets/img/Post_200507/Post_200507_4.png)
+
+ 3. conn sys/비밀번호 as sysdba
+![ex_scs_5](../assets/img/Post_200507/Post_200507_5.png)
+
+연결됨...!!!!!
+
+
+
+그 후 lock을 풀기 위해 select username, account_status, lock_date from dba_users;
+
+입력하여 어떤 계정이 lock 걸려 있는지 확인 후
+![ex_scs_6](../assets/img/Post_200507/Post_200507_6.png)
+
+alter user 계정이름 account unlock; 으로 lock 풀어준다
+![ex_scs_7](../assets/img/Post_200507/Post_200507_7.png)
+
+※ 참고: account_status 상태
+
+ - OPEN : 정상
+ - LOCKED(TIMED) : 일정 횟수 이상 잘못 입력함
+ - EXPIRED & LOCKED : 패스워드 기간만료
+
+ <hr>

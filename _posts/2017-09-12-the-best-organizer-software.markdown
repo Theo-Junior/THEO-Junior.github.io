@@ -1,22 +1,80 @@
 ---
 layout: post
 title: The Best Organizer Software
-date: 2017-09-12 00:00:00 +0300
+date: 2020-04-29 04:15:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Productivity, Software] # add tag
 ---
 
-Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh XOXO butcher cardigan authentic organic letterpress. Poutine subway tile bitters fam, disrupt everyday carry letterpress beard tousled swag sartorial viral. Retro af 3 wolf moon heirloom, pork belly man bun DIY chillwave. Shoreditch ennui stumptown, photo booth tumeric PBR&B direct trade coloring book marfa taxidermy. Gentrify brunch typewriter woke freegan. Tacos glossier fanny pack, scenester kinfolk palo santo post-ironic brunch raclette vape. Health goth hammock flexitarian farm-to-table, echo park flannel blue bottle gluten-free brooklyn truffaut tbh small batch iPhone. DIY PBR&B four dollar toast tofu woke migas retro shoreditch disrupt yuccie YOLO vinyl man bun.
+# 마크다운(Github.io에 작성하는 포스트 위주로..) 작성 방법 정리
 
-### Church-key blog messenger bag
 
-Tumblr bicycle rights intelligentsia, food truck migas raw denim whatever portland gastropub messenger bag chartreuse vape lomo coloring book subway tile. Yr pabst meggings tattooed four dollar toast. Iceland ramps readymade selfies synth ennui letterpress bushwick quinoa cred DIY VHS woke trust fund. Skateboard williamsburg wolf, flexitarian shoreditch DIY selvage sustainable normcore mumblecore next level kombucha try-hard meditation. Gentrify plaid microdosing, master cleanse ugh crucifix pop-up. Wolf bushwick street art tumeric. Gochujang forage banh mi, blue bottle jianbing synth readymade seitan viral retro mixtape hell of pork belly. Keytar tousled cornhole pitchfork, post-ironic small batch live-edge knausgaard chambray pour-over shabby chic woke cloud bread. Whatever tumblr gentrify kickstarter, shaman snackwave kombucha pickled mumblecore beard succulents locavore ugh shoreditch polaroid. Wayfarers crucifix tattooed twee. Yr listicle crucifix fingerstache farm-to-table. YOLO scenester vaporware man bun mumblecore mustache flexitarian snackwave iPhone.
+## I. 제목(Header)
 
-Hella lo-fi banjo, disrupt tofu prism raclette. Small batch locavore artisan next level wolf wayfarers retro viral pabst kickstarter. Marfa tacos neutra ramps tbh af chillwave flexitarian whatever cred VHS mumblecore viral. Hell of retro vegan chambray tacos VHS four dollar toast tote bag. Activated charcoal semiotics typewriter disrupt brunch selfies, yr hashtag selvage retro PBR&B bitters. Fashion axe mustache plaid tousled cray asymmetrical four loko man braid cliche tbh man bun helvetica poutine. Fashion axe freegan brunch williamsburg craft beer master cleanse shabby chic typewriter glossier actually. Plaid tumblr hexagon neutra slow-carb mumblecore. Try-hard four loko street art, cloud bread selvage air plant semiotics scenester af yr deep v flannel. Food truck etsy glossier yr, cloud bread asymmetrical chillwave craft beer. Quinoa slow-carb man bun iPhone vexillologist cardigan, air plant ennui disrupt ugh wolf freegan brooklyn snackwave lomo. Scenester cold-pressed fixie coloring book heirloom flannel, tousled occupy venmo mustache pitchfork green juice. VHS neutra 8-bit roof party. Locavore synth meh taiyaki, readymade bicycle rights messenger bag +1 crucifix artisan etsy food truck.
 
-### Pour-over blue bottle woke listicle
+제목은 글자 앞에 "#"을 붙여서 나타내며 #가 적을수록 커다란 글자가 표시된다. 즉 #의 갯수에 따라 '\<h1> \- \<h6>'의 순서로 표시되는 것이다. 현재 작성한 포스트의 제목은 \#제목1 크기이다.
 
-Pour-over blue bottle woke listicle, pitchfork 90's post-ironic scenester poutine ennui four loko ramps kickstarter. Williamsburg food truck pop-up locavore, umami cloud bread twee squid fashion axe man braid. Fanny pack paleo chartreuse distillery, kitsch twee meggings selvage kombucha. Keffiyeh actually prism listicle. Taxidermy authentic iPhone migas vegan copper mug. Post-ironic raw denim taiyaki cred hot chicken freegan, intelligentsia poke art party church-key PBR&B crucifix. Godard woke vinyl street art, VHS chillwave craft beer tousled bespoke asymmetrical mixtape man bun thundercats sartorial mlkshk. Meggings heirloom XOXO gentrify try-hard stumptown. Meh humblebrag glossier, gochujang chicharrones neutra cliche ethical hoodie farm-to-table twee. Messenger bag offal pug bespoke, put a bird on it tote bag literally.
+**다음은 예시이다.** 아래와 같이 사용하며 혹여나 나처럼 게시를 위해 작성하는 누군가를 위해 아래처럼 표시하려면 이스케이프(\\)를 앞에 붙여주고 작성해야 한다.
+<br>
+<br>
 
-Everyday carry kinfolk shoreditch normcore try-hard etsy messenger bag venmo enamel pin. Try-hard fanny pack thundercats farm-to-table retro twee. Godard photo booth tofu 90's. Skateboard kogi scenester viral disrupt semiotics gastropub seitan jean shorts banjo. Humblebrag knausgaard waistcoat mixtape. Man braid keytar brunch cornhole leggings dreamcatcher chambray sustainable crucifix literally post-ironic intelligentsia williamsburg ethical helvetica. Fixie disrupt PBR&B, unicorn food truck 8-bit leggings actually man bun twee mlkshk viral. Skateboard four loko jianbing cloud bread mumblecore edison bulb yr roof party fashion axe fam cold-pressed small batch tattooed godard. Bushwick yuccie thundercats schlitz listicle skateboard quinoa. Gentrify hot chicken pop-up keytar master cleanse pork belly. Irony pitchfork la croix neutra freegan. Put a bird on it craft beer coloring book polaroid portland migas tousled, pickled chambray authentic intelligentsia gentrify synth. Letterpress tumblr wolf normcore selvage. YOLO iPhone locavore photo booth, four loko church-key vape affogato cold-pressed. Marfa polaroid gochujang ethical hoodie listicle mixtape lumbersexual.
+
+
+###**제목 예시**
+<hr>
+
+
+
+ # 제목1
+#제목1_예시
+\## 제목2
+##제목2_예시
+\### 제목3
+###제목3_예시
+\#### 제목4
+####제목4_예시
+\##### 제목5
+#####제목5_예시
+\###### 제목6
+######제목6_예시
+
+<hr>
+
+##강조(Emphasis)
+
+
+ 강조의 종류에는 기울임(Italic), 두꺼움(Bold), 취소선(MiddleLine), 밑줄(Underline)이 있다.
+
+- 기울임(Italic) : \*문장* 혹은 \_문장_으로 작성한다.
+-> 예시 : *기울임*
+<br>
+- 두꺼움(Bold) : \*\*문장\*\* 혹은 \_\_문장\_\_
+-> 예시 : **두꺼움**
+<br>
+- 취소선(MiddleLine) : \~\~문장~~
+-> 예시 : ~~취소선~~
+<br>
+
+- 밑줄(Underline) : \<u>문장\</u>
+-> 예시 : <u>밑줄</u>
+
+<hr>
+
+##목록(List)
+<br>
+
+- 순서가 있는 목록 : 앞에 번호. 를 붙인다.
+- 순서를 정렬하기 위해 \<ol> \<ul> 태그를 사용한다.
+- ol 태그로 앞에서 정렬해주고 ul 태그로 이어서 번호를 매기도록 한다.
+-> 예시
+<ol> 1. 순서가 있는 목록 첫번째 </ol>
+<ol> 2. 순서가 있는 목록 두번째
+<ul> 3. 순서가 있는 목록 세번째 </ul>
+<ul> 4. 순서가 있는 목록 네 번째 </ul></ol>
+
+- 순서가 없는 목록 : 앞에 \-, \*, \+ 를 붙인다.
+-> 예시
+<ol>  순서가 없는 목록(-) </ol>
+순서가 없는 목록(+)
+순서가 없는 목록(*)
