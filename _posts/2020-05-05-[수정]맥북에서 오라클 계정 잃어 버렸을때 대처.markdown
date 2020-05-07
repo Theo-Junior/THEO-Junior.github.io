@@ -51,20 +51,21 @@ not connected(lock 걸려서 접속이 안되므로)
 
 
 이런 무한 루프에 빠져버림...  
-![ex_scs_1](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_1.png)   
-![ex_scs_2](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_2.png)  
+![Post_200507_1](https://user-images.githubusercontent.com/63324349/81248126-abac3b80-9056-11ea-850f-c570d66a006c.png)  
+<img width="640" alt="Post_200507_2" src="https://user-images.githubusercontent.com/63324349/81248703-f11d3880-9057-11ea-8a3c-e875bcc167a2.png">
+
 
 결국 이 무한 루프를 끝내기 위해서는 sysdba에 접속을 해야 뭔갈 할 수 있음  
 
 그렇다면 mac에서 docker로 oracle11g 실행 후 sqlplus sysdba에 접속하려면?  
 
 1. docker exec -it 컨테이너ID bin/bash  
-![ex_scs_3](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_3.png)  
+<img width="640" alt="Post_200507_3" src="https://user-images.githubusercontent.com/63324349/81248743-072af900-9058-11ea-8ef7-f0f77468bb9b.png">  
 
 2. root@컨테이너ID: /# sqlplus /nolog  
-![ex_scs_4](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_4.png)  
+![Post_200507_4](https://user-images.githubusercontent.com/63324349/81248746-08f4bc80-9058-11ea-83f5-58edcf49b1ea.png)
 3. conn sys/비밀번호 as sysdba  
-![ex_scs_5](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_5.png)  
+![Post_200507_5](https://user-images.githubusercontent.com/63324349/81248747-098d5300-9058-11ea-84c5-da609c3577e5.png)
 
 연결됨...!!!!!  
 
@@ -73,10 +74,9 @@ not connected(lock 걸려서 접속이 안되므로)
 그 후 lock을 풀기 위해 select username, account_status, lock_date from dba_users;  
 
 입력하여 어떤 계정이 lock 걸려 있는지 확인 후  
-![ex_scs_6](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_6.png)  
-
+<img width="640" alt="Post_200507_6" src="https://user-images.githubusercontent.com/63324349/81248749-0a25e980-9058-11ea-89fc-bb282cc0ef3c.png">
 alter user 계정이름 account unlock; 으로 lock 풀어준다  
-![ex_scs_7](https://github.com/Theo-Junior/Theo-Junior.github.io/blob/master/assets/img/Post_200507/Post_200507_7.png)  
+![Post_200507_7](https://user-images.githubusercontent.com/63324349/81248750-0befad00-9058-11ea-9e59-481564288ea9.png)
 
 ※ 참고: account_status 상태  
 
