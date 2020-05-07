@@ -1,7 +1,7 @@
 ---
 layout: post
 title: [스크랩] 맥북에서 docker oracle11g 실행 후 sqlplus sysdba로 접속하는 방법..!
-date: 2020-05-07 10:29:30 +0300
+date: 2020-05-07 00:00:00 +0300
 description: 맥북에서 오라클을 구동하다가 관리자 계정을 잃어버린 분들을 위한 스크랩 포스팅입니다. # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Programming, OracleDB, Scrap, MacOs] # add tag
