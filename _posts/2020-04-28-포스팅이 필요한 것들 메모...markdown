@@ -2,7 +2,7 @@
 layout: post
 title: 작성해야하는 포스팅들 잠깐 메모하는 포스팅..
 date: 2020-04-28 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: 블로그에 포스팅 해야하는 것들을 잠깐 메모하기 위한.. 그런 포스팅.. # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Productivity, Software] # add tag
 ---

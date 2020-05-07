@@ -2,7 +2,7 @@
 layout: post
 title: The Best Organizer Software
 date: 2020-04-29 04:15:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+description: 마크다운을 공부하다가 작성에 필요한 것들을 공부목적으로 작성한 포스팅입니다. # Add post description (optional)
 img: software.jpg # Add image post (optional)
 tags: [Productivity, Software] # add tag
 ---
