@@ -7,8 +7,8 @@ img: software.jpg # Add image post (optional)
 tags: [Programming, OracleDB, Scrap, MacOs] # add tag
 ---
 
-####이 게시물은 스크랩입니다.
-####https://yruby.tistory.com/38 의 글을 참고했고 공부 용으로 스크랩 해두었습니다.
+<h5>이 게시물은 스크랩입니다.
+<h5>https://yruby.tistory.com/38 의 글을 참고했고 공부 용으로 스크랩 해두었습니다.</h5>
 <hr>
 
 오라클 강의를 듣는 중..
