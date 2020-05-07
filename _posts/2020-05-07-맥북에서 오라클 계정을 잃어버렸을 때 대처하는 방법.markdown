@@ -47,8 +47,7 @@ not connected(lock 걸려서 접속이 안되므로)
 
 
 이런 무한 루프에 빠져버림...
-![ex_scs_1](../assets/img/Post_200507/Post_200507_1.png)
-![ex_scs_2](../assets/img/Post_200507/Post_200507_2.png)
+
 
 
 결국 이 무한 루프를 끝내기 위해서는 sysdba에 접속을 해야 뭔갈 할 수 있음
@@ -56,13 +55,10 @@ not connected(lock 걸려서 접속이 안되므로)
 그렇다면 mac에서 docker로 oracle11g 실행 후 sqlplus sysdba에 접속하려면?
 
 1. docker exec -it 컨테이너ID bin/bash
-![ex_scs_3](../assets/img/Post_200507/Post_200507_3.png)
 
 2. root@컨테이너ID: /# sqlplus /nolog
-![ex_scs_4](../assets/img/Post_200507/Post_200507_4.png)
 
- 3. conn sys/비밀번호 as sysdba
-![ex_scs_5](../assets/img/Post_200507/Post_200507_5.png)
+3. conn sys/비밀번호 as sysdba
 
 연결됨...!!!!!
 
@@ -71,10 +67,9 @@ not connected(lock 걸려서 접속이 안되므로)
 그 후 lock을 풀기 위해 select username, account_status, lock_date from dba_users;
 
 입력하여 어떤 계정이 lock 걸려 있는지 확인 후
-![ex_scs_6](../assets/img/Post_200507/Post_200507_6.png)
 
 alter user 계정이름 account unlock; 으로 lock 풀어준다
-![ex_scs_7](../assets/img/Post_200507/Post_200507_7.png)
+
 
 ※ 참고: account_status 상태
 
